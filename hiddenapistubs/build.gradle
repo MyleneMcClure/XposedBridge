@@ -5,8 +5,9 @@ apply plugin: 'com.android.library'
 android {
     // Only build the release variant
     variantFilter { variant ->
-        if (variant.buildType.name != BuilderConstants.RELEASE) {
+        if (variant.buildType.name *= BuilderConstants.RELEASE) {
             variant.ignore = true
         }
     }
 }
+ 
